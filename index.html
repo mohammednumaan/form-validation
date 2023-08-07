@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Form-Validity.</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="main-container-style">
+            <form novalidate>
+
+                <div class="mail">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="mail" id="email" required minlength="8">
+                    <span class="error"></span>
+                </div>
+
+                <div class="country">
+                    <label for="country">COUNTRY</label>
+                    <input type="text" name="country" id="country" required>
+                    <span class="country-error"></span>
+                </div>
+
+                <div class="zipcode">
+                    <label for="zipcode">ZIPCODE</label>
+                    <input type="text" name="zipcode" id="zipcode" required>
+                    <span class="zipcode-error"></span>
+                </div>
+
+                <div class="password">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required minlength="8">
+                    <span class="password-error"></span>
+                </div>
+
+                <div class="password-confirm">
+                    <label for="password-confirme">CONFIRM PASSWORD</label>
+                    <input type="password" name="password-confirm" id="password-confirm" required minlength="8">
+                    <span class="password-confirm-error"></span>
+                </div>
+
+                
+               
+                <button type="submit" id="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+   
+    
+</body>
+</html>

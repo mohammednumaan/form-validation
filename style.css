@@ -1,0 +1,92 @@
+.main-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+}
+.main-container-style{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* EMAIL */
+
+label{
+
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.mail,
+.country,
+.zipcode,
+.password,
+.password-confirm{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+/* invalid */
+
+input:valid{
+
+    background-color: lightseagreen;
+}
+
+input:focus:valid{
+    outline: none;
+}
+
+input:invalid {
+    
+    background-color: #fdd;
+}
+
+  
+input:focus:invalid {
+    outline: none;
+}
+
+.error,
+.country-error,
+.zipcode-error,
+.password-error,
+.password-confirm-error{
+    width: 206px;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.error.active,
+.country-error.active,
+.zipcode-error.active,
+.password-error.active,
+.password-confirm-error.active{
+
+    padding: 0.5rem;
+}
+
+#submit{
+
+    width: 206px;
+}
